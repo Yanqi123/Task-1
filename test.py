@@ -21,7 +21,7 @@ for name in load_dict:
  if load_dict[name]["Top-1 Index"] == p1:
   a=a+1
  
- if (load_dict[name]["Top-1 Index"] == p1) and (load_dict[name]["Confidence"][p1] > p2):
+ if (load_dict[name]["Top-1 Index"] == p1) and (float(load_dict[name]["Confidence"][p1]) > p2):
   b=b+1
   
 
